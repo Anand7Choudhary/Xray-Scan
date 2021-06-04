@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    cursor: context-menu;
+}
+@keyframes entery{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+header{
+    position: relative;
+    width:100%;
+    height:10vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0px 2.5%;
+    overflow: hidden;
+    background-color: transparent;
+}
+header .LeftHeader{
+    width:25%;
+    height:100%;
+    color: rgba(30,30,30);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+header .nav{
+    position: relative;
+    width:75%;
+    height:100%;
+    color: rgba(30,30,30);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+}
+header .nav a{
+    text-decoration: none;
+    text-decoration-style: none;
+    margin:0px 2.5%;
+    font-size: 20px;
+}
+header .nav a p{
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+}
+header .nav a p:hover{
+    color: rgb(255, 74, 74);
+}
+.Title{
+    position: relative;
+    width:100%;
+    height:20vh;
+    display: flex;
+    justify-content: center;
+    align-items:initial;
+    background-color: transparent;
+    overflow: hidden;
+}
+.Title p{
+    text-align: center;
+    font-size: 40px;
+    color: rgba(50,50,50);
+}
+.MainBody,.About,.Contact,.Output{
+    position: relative;
+    width:100%;
+    height: 70vh;
+    position: relative;
+    background-color: transparent;
+    padding-top:5%;
+    overflow:auto;
+    animation: entery 1s linear;
+}
+.MainBody .heading{
+    letter-spacing: 20px;
+    word-spacing: 20px;
+    width:100%;
+    height: 15%;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(50,50,50);
+    background-color: transparent;
+}
+.MainBody .UserData{
+    display: none;
+}
+.MainBody .UserDataEnter{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding:1% 5%;
+    border-radius: 15px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0);
+    font-weight: bolder;
+}
+.MainBody .UserDataEnter:hover{
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0);
+}
+.MainBody .or{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: rgba(50,50,50);
+}
+.MainBody .UserLink{
+    position: absolute;
+    width:30%;
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(220, 220, 220);
+    padding:5px;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 20px;
+    letter-spacing: 2px;
+    outline: none;
+}
+.MainBody .UserLink:hover{
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+.MainBody .SubmitButton{
+    display: none;
+}
+.MainBody .Submit{
+    position: absolute;
+    top:85%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding:5px 20px;
+    border:2px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}

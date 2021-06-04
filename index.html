@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid X-ray test</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="LeftHeader"><p>Image Processing&emsp;|&emsp;Mini Project</p></div>
+        <nav id="nav" class="nav">
+            <a id="NavItem1 NavItem"><p onclick="menu(1)" id="p1">Home</p></a>
+            <a id="NavItem2 NavItem"><p onclick="menu(2)" id="p2">About</p></a>
+            <a id="NavItem3 NavItem"><p onclick="menu(3)" id="p3">Contact</p></a>
+            <a id="NavItem4 NavItem"><p onclick="menu(4)" id="p4">Output</p></a>
+        </nav>
+    </header>
+    <div class="Title">
+        <p>
+            Covid-19 detection from<br>Chest X-ray
+        </p>
+    </div>
+
+    <!--    Main Body   -->
+
+    <div class="MainBody Home" id="Home">
+        <div class="heading">
+            <p>INSERT IMAGE HERE</p>
+        </div>
+        <label class="UserDataEnter" for="img">+  Upload</label>
+        <input class="UserData" type="file" id="img" name="img" accept="image/*">
+        <p class="or">OR</p>
+        <input class="UserLink" type="url" id="link" name="link" placeholder="Insert image link">
+        <label class="Submit" for="Submit">Submit</label>
+        <input class="SubmitButton" type="Submit">
+    </div>
+    <div class="About" id="About"></div>
+    <div class="Contact" id="Contact"></div>
+    <div class="Output" id="Output"></div>
+    <script src="home.js"></script>
+    <noscript>JavaScript is Disabled</noscript>
+</body>
+</html>
