@@ -29,17 +29,44 @@
     <div class="MainBody Home" id="Home">
         <div class="heading">
             <p>INSERT IMAGE HERE</p>
-        </div>
-        <label class="UserDataEnter" for="img">+  Upload</label>
-        <input class="UserData" type="file" id="img" name="img" accept="image/*">
+        </div>        
+        <label class="UserDataEnter" for="img">+  Upload
+            <p class="file-name"></p>
+        </label>
+        <input class="UserData" type="file" id="img" name="img" accept="image/*" data-multiple-caption="{count} files selected" multiple />
         <p class="or">OR</p>
         <input class="UserLink" type="url" id="link" name="link" placeholder="Insert image link">
         <label class="Submit" for="Submit">Submit</label>
         <input class="SubmitButton" type="Submit">
     </div>
-    <div class="About" id="About"></div>
-    <div class="Contact" id="Contact"></div>
-    <div class="Output" id="Output"></div>
+    <div class="About" id="About">
+        <div class="heading">
+            <p>ABOUT THE PROJECT</p>
+        </div>
+    </div>
+    <div class="Contact" id="Contact">
+        <div class="heading">
+            <p>CONTACT</p>
+        </div>
+        <div class="ContactDetails">
+            <p class="p1">Email<br></p>
+            <p class="p2">Varun - varunbharadwaj00@gmail.com</p>
+            <p class="p2">Kaustubh- kaushi00@gmail.com</p>
+            <p class="p2">Anand - raschoudhary879@gmail.com</p>
+        </div>
+    </div>
+    </div>
+    <div class="Output" id="Output">
+        <div class="resultbody">
+            <p class="p1">RESULT</p>
+            <p class="resultvalue"></p>
+        </div>
+        <div class="imagebody">
+            <p class="p1">Image and Heatmap</p>
+            <p class="imagevalue"></p>
+            <img class="imagepicture" src="" alt="heat map picture">
+        </div>
+    </div>
     <script src="home.js"></script>
     <noscript>JavaScript is Disabled</noscript>
 </body>
